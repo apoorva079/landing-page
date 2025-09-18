@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing - Your Product</title>
+
+  <!-- Google font (Inter) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">MyProduct<span class="logo-dot">.</span></a>
+
+      <!-- mobile toggle -->
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+
+          <li class="has-dropdown">
+            <a href="#features" aria-haspopup="true" aria-expanded="false">Features ▾</a>
+            <ul class="dropdown" role="menu" aria-label="Features submenu">
+              <li><a href="#feature1">Fast Performance</a></li>
+              <li><a href="#feature2">Secure</a></li>
+              <li><a href="#feature3">Easy Integration</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#services" aria-haspopup="true" aria-expanded="false">Services ▾</a>
+            <ul class="dropdown" role="menu" aria-label="Services submenu">
+              <li><a href="#service1">Consulting</a></li>
+              <li><a href="#service2">Implementation</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-cta" href="#get-started">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Beautiful landing pages made simple</h1>
+        <p>Create modern, responsive landing pages fast — built with HTML & CSS, and a tiny vanilla JS for interactivity.</p>
+        <div class="hero-actions">
+          <a href="#get-started" class="btn btn-primary">Get Started</a>
+          <a href="#features" class="btn btn-outline">See Features</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section container">
+      <h2 class="section-title">Key Features</h2>
+      <div class="feature-grid">
+        <article id="feature1" class="feature-card">
+          <svg class="icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true"><path d="M12 2L3 7v7c0 5 4 9 9 9s9-4 9-9V7l-9-5z" fill="currentColor"/></svg>
+          <h3>Fast Performance</h3>
+          <p>Optimized markup and CSS for quick load times.</p>
+        </article>
+
+        <article id="feature2" class="feature-card">
+          <svg class="icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true"><path d="M12 1L3 5v6c0 5 4 9 9 9s9-4 9-9V5l-9-4z" fill="currentColor"/></svg>
+          <h3>Secure</h3>
+          <p>Built with semantic HTML and accessible components.</p>
+        </article>
+
+        <article id="feature3" class="feature-card">
+          <svg class="icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true"><path d="M12 2L2 12h4v8h4v-6h4v6h4v-8h4z" fill="currentColor"/></svg>
+          <h3>Easy Integration</h3>
+          <p>Plug into any backend or use static hosting.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA section / simple get started -->
+    <section id="get-started" class="section cta-section">
+      <div class="container">
+        <h2>Ready to start?</h2>
+        <p>Use this template as a starting point and customize it for your project.</p>
+        <a class="btn btn-primary large" href="#contact">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Contact (simple form) -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact</h2>
+      <form id="contact-form" class="contact-form" action="#" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> MyProduct. All rights reserved.</p>
+      <nav class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
